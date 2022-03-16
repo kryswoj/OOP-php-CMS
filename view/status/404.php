@@ -59,27 +59,10 @@
 
   <main role="main" class="container">
 
-      <form action="index.php" method="POST" class="form-signin">
-        <input type="hidden" name="section" value="contact">
-        <input type="hidden" name="action" value="submit">
-          <div class="text-center mb-4">
-              <h1 class="h3 mb-3 font-weight-normal">Contact us</h1>
-          </div>
-
-          <div class="form-label-group">
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-              <label for="inputEmail">Email address</label>
-          </div>
-
-          <div class="form-label-group">
-              <textarea id="message" class="form-control" placeholder="Password" required></textarea>
-              <label for="message">Password</label>
-          </div>
-
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-          <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2020</p>
-      </form>
-
+    <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal text-danger">ERROR 404!</h1>
+        <h2>Page not found</h2>
+    </div>
   </main><!-- /.container -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script></body>

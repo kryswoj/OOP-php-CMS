@@ -1,20 +1,12 @@
 <?php
 
-class ContactController {
-    public function showFormAction() {
+class ContactController extends Controller
+{
+    public function index() {
         include 'view/contact-us.php';
     }
 
-    public function submitContactFormAction() {
+    public function submitForm() {
         include 'view/components/thank-you.php';
-    }
-
-    public function runAction($actionName) {
-        if (method_exists($this, $actionName)) {
-            $actionName .= 'Action';
-            $this->$actionName();
-        } else {
-            include 'view/status/404.php';
-        }
     }
 }

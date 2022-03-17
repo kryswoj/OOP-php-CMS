@@ -61,7 +61,7 @@
 
       <form action="index.php" method="POST" class="form-signin">
         <input type="hidden" name="section" value="contact">
-        <input type="hidden" name="action" value="submit">
+        <input type="hidden" name="action" value="submitForm">
           <div class="text-center mb-4">
               <h1 class="h3 mb-3 font-weight-normal">Contact us</h1>
           </div>

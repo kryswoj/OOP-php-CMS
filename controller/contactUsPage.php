@@ -3,7 +3,12 @@ class ContactController extends Controller
 {
     public function index()
     {
-        include 'view/contact/contact-us.php';
+        $items['title'] = 'Contact us';
+        $items['content'] = 'Please, write us a message ;).';
+
+
+        $template = new Template();
+        $template->view('contact/contact-us', $items);
     }
 
     public function submitForm()

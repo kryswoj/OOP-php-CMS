@@ -5,6 +5,6 @@ class Template {
     {
         extract($items);
 
-        include "view/$template.php";
+        include 'view/layout/default.php';
     }
 }

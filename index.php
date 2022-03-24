@@ -1,11 +1,12 @@
 <?php
-
+session_start();
 require_once 'src/Controller.php';
+
 
 $section = $_GET['section'] ?? $_POST['section'] ?? 'home';
 $action  = $_GET['action'] ?? $_POST['action'] ?? 'index';
 
-if ($section == 'about-us') {
+if ($section == 'about') {
     include 'controller/aboutUsPage.php';
 
     $aboutController = new AboutUsController();

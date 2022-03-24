@@ -4,6 +4,11 @@ class AboutUsController extends Controller
 {
     public function index()
     {
-        include 'view/about-us.php';
+        $items['title'] = 'About us';
+        $items['content'] = 'Welcome to our About Us page';
+
+
+        $template = new Template();
+        $template->view('static-page', $items);
     }
 }

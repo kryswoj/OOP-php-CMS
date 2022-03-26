@@ -1,6 +1,7 @@
 <?php
 
-class Controller {
+class Controller
+{
     public function runAction($actionName) {
         if(method_exists($this, 'runBeforeAction')) {
             $result = $this->runBeforeAction();

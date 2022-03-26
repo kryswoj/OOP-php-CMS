@@ -4,11 +4,11 @@
     <input type="hidden" name="action" value="submitForm">
     <div class="text-center mb-4">
         <h1 class="h3 mb-3 font-weight-normal">
-          <?= $title; ?>
+          <?= $pageObj->title; ?>
         </h1>
 
         <p class="lead">
-            <?= $content  ?>
+            <?= $pageObj->content  ?>
         </p>
     </div>
 

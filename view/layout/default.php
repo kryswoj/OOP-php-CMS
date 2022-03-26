@@ -53,13 +53,13 @@
     </head>
 <body>
     <?php
-        include 'view/components/navigation.php';
+        include VIEW_PATH . '/components/navigation.php';
     ?>
 
     <main role="main" class="container">
 
         <?php
-            include "view/$template.php";
+            include VIEW_PATH . $template .'.php';
         ?>
 
     </main>

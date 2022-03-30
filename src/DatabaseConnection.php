@@ -14,15 +14,11 @@ final class DatabaseConnection
         return self::$instance;
     }
 
-    private function __construct()
-    {
+    private function __construct(){}
 
-    }
+    private function __clone(){}
 
-    private function __clone()
-    {
-
-    }
+    public function  __wakeup(){}
 
     public static function connect($host, $dbName, $user, $password)
     {

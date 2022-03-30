@@ -3,11 +3,10 @@ class ContactController extends Controller
 {
     public function index()
     {
-        $dbh = DatabaseConnection::getInstance();
-        $dbc = $dbh->getConnection();
 
-        $pageObj = new Page($dbc);
-        $pageObj->findById(5);
+
+        $pageObj = new Page($this->dbc);
+        $pageObj->findBy('id', $this->entityId);
 
         $items['pageObj'] = $pageObj;
 
@@ -23,10 +22,7 @@ class ContactController extends Controller
         //send email
         $_SESSION['submitForm'] = 1;
 
-        $dbh = DatabaseConnection::getInstance();
-        $dbc = $dbh->getConnection();
-
-        $pageObj = new Page($dbc);
+        $pageObj = new Page($this->dbc);
         $pageObj->findById(4);
 
         $items['pageObj'] = $pageObj;
@@ -40,10 +36,8 @@ class ContactController extends Controller
     {
 
         if ($_SESSION['submitForm'] ?? 0 == 1) {
-            $dbh = DatabaseConnection::getInstance();
-            $dbc = $dbh->getConnection();
 
-            $pageObj = new Page($dbc);
+            $pageObj = new Page($this->dbc);
             $pageObj->findById(3);
 
             $items['pageObj'] = $pageObj;
